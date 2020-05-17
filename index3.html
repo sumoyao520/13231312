@@ -1,0 +1,123 @@
+< html > < head > < meta  http-equiv =“ Content-Type ” content =“ text / html; charset = UTF-8 ” >
+
+< title >你若不离不弃我必生死相依</ title >
+< style  type =“ text / css ” >
+身体 {
+    左边距：0 px ;
+    margin-top：0 px ;
+    右边距：0 px ;
+    底边距：0 px ;
+    背景颜色：＃ FF62FF ;
+}
+。内容 {
+    宽度：80 ％ ;
+    颜色：＃ 90F ;
+    高度：100 ％ ;
+    顶部：0 像素 ;
+    左：10 ％ ;
+    字体大小：18 px ;
+    行高：25 px ;
+    字体家族：“微软雅黑”；
+    margin-top：0 px ;
+}
+身体 {
+    颜色：＃ FFF ;
+    填充：10 像素 ;
+    背景：＃ FFF  URL（bg.jpg）不重复固定顶部中心;
+    左边距：0 px ;
+    margin-top：0 px ;
+    右边距：0 px ;
+    底边距：0 px ;
+}
+。des {
+    字体大小：15 px ;
+    颜色：＃ 3C3C3C ;
+    / *宽度：100％； * /
+    文本阴影：0px 0px 1px ＃fff ;
+    z索引：1000；                   
+    右：20px；
+    位置：固定 重要！ ;
+    底部：0px；
+}
+。德 一 {
+    颜色：＃ 3C3C3C ;
+    文本阴影：0px 0px 1px ＃fff ;
+}
+</ style >
+< script  src =“ ./jscss/jquery-1.7.1.min.js ” language =“ javascript ” type =“ text / javascript ” > </ 脚本>
+< script  src =“ ./jscss/tao.js ” language =“ javascript ” type =“ text / javascript ” > </ 脚本>
+< 脚本>
+$ （文档）。准备就绪（功能（e ） {
+    / *禁止鼠标和隐藏鼠标* /
+    $ （“ body” ）。绑定（“ contextmenu” ， 函数（） {
+      返回 false ;
+    } ）;
+    
+    / *定义文字最底部显示到哪儿* /
+    var  guangs = [ “” ，“ |” ，“” ，“ |” ] ；
+    var  guangBiao = “ /” ;
+    var  guangSub = 0 ;
+    var  guang = setInterval （“ $ .guang（）” ，120 ）;
+    
+    var  subs = 0 ;
+    var  string =“四月是谎言的季节██我喜欢你██第一句是谎言███第二句也是████“喂，要不要进家族群”██“嗯哼？”██”就是家族群啊，你到底进不进呀”██”进啊进啊，我进去撩妹子，嘿嘿”██os：咦，这群人怎么才四个，鸳鸯社？果然是撩妹cp群呀，，南汐沫？这名字挺好听的〜████“嘿嘿”██干嘛”██”没事”██”没事我就删了啊”██”喂喂，你能不能不要删除我了，交个朋友呗”██“昂”██os：这妹子好高冷啊，终于同意我进她的好友列表了，emmm似乎不太好撩的样子，嘿嘿████“把聊天记录发给我看看“██”哼，不给，略略略“██”那，答应你四个条件”██”哦豁，嘻嘻”██os：哈哈做我狗子和做我孙子你总得选一个，不过为啥是四个条件？████“有长腿妹子吗，介绍下介绍下”██“很忙” ...██” 次你说的长腿妹子？”██“骗你的”██“呜呜”██os：傻瓜，我找的长腿妹子就是你呀，嘿嘿████“真没对象？”█ █“有对象就不会撩妹子了，啊呀不对，不是撩妹子，就是在群里开开车”██“你是渣男吗”██“不是啊，当然不是”██”说实话啦，我-喜-欢-你〜”██os：我也喜欢你啊，嘿嘿██“那个，对不起”██“哦”██“都是我不好”██“哦”█ █“那个，你有什么想问的吗”██“没有，我又不啰嗦”████os：完了完了，狗子她生气了██......████四月的尾巴，你为我表演了一个魔术，很精彩的表演，我完全没猜到故事的结局██我不知道自己做错了什么，我加回你想问个清楚，你告诉我██”别来找我了...”██......██......██...██我缩小光了所有的好友，退出了所有的群，永远锁上了Q Q空间██没有你，我一无所有██我疯狂地令人嫉妒王梦飞██你在空间里关于他的每一句留言都像刀子般插进了我的心口██”……;
+    $ 。意向= 函数（str ）{
+        str = “” + str ;
+        // var reg = new RegExp（“ /█{1,2} /”，“ i”）; //创建正则RegExp对象
+        str = str 。替换（eval （“ /█/ gi” ），“█” ）;
+
+        返回 str ;
+    }
+    字符串= $ 。意向（字符串）;
+    
+    var  echo = setInterval （“ $ .echo（）” ，300 ）;
+    
+    $ 。guang = 函数（）{
+          如果（guangSub < guangs 。长度- 1 ）{
+                guangSub ++ ;
+              } 其他{
+                  guangSub = 0 ;
+                  }
+            guangBiao = guangs [ guangSub ] ;
+            $ （“ #guang” ）。html （广标）;
+            
+        }
+    
+    $ 。echo = 函数（）{
+        如果（潜艇< 字符串。长度）{
+        $ （“ #txt” ）。HTML （$ （“#txt” ）。 HTML （）+ $ 。REPL （字符串。SUBSTR （潜艇，1 ）））;
+        如果（$ （“#guang” ）。 偏移（）。顶部> 文档。体。scrollHeight属性 / 2 ）{  
+          窗口。scrollTo （0 ，$ （“＃guang” ）。offset （）。top ）;
+        }
+               $ （“ .des” ）。css （“ bottom” ，“ 0px” ）;
+        潜艇++ ;
+        }
+    }
+    $ 。repl = 函数（str ）{
+        str = str 。替换（“ \ r \ n” ，“ <br/>” ）;
+        str = str 。replace （“ \ n” ，“ <br/>” ）;
+        str = str 。替换（“█” ，“ <br/>” ）;
+        返回 str ;
+    }
+} ）;
+</ 脚本>
+</ head >
+
+< 身体>
+< audio  src =“ def.mp3 ” autoplay =“ autoplay ” > </ 音频>
+
+< 中心>
+< div  align =“ left ” class =“ content ” > < span  id =“ txt ” > </ span > < span  id =“ guang ” > </ span >
+< span > </ span >
+</ div >
+</ center >
+
+<！-下面是浮动的桃心->
+< div  id =“ 气泡 ” style =“ 可见性：隐藏 ” >
+< img  src =“ ./jscss/1.png ” >
+< img  src =“ ./jscss/2.png ” >
+< img  src =“ ./jscss/1.png ” >
+</ div >
+<！---->
+
+</ body > </ html >
